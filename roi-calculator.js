@@ -5,7 +5,11 @@
 // "#hours-worked-per-week"
 // "#weeks-worked-per-year"
 
+const defaultFivetranContractPeriod = 12;
+const defaultEstOnboardingTime = 4;
 const defaultSalary = 70000;
+const defaultHoursWorkedPerWeek = 40;
+const defaultWeeksWorkedPerYear = 48;
 
 const fivetranContractPeriod = document.getElementById("fivetran-contract-period")
 const estOnboardingTime = document.getElementById("est-onboarding-time")
@@ -15,4 +19,15 @@ const hoursWorkedPerWeek = document.getElementById("hours-worked-per-week")
 const weeksWorkedPerYear = document.getElementById("weeks-worked-per-year")
 
 
+
+fivetranContractPeriod.defaultValue = defaultFivetranContractPeriod;
+estOnboardingTime.defaultValue = defaultEstOnboardingTime;
 averageSalary.defaultValue = defaultSalary;
+hoursWorkedPerWeek.defaultValue = defaultHoursWorkedPerWeek;
+weeksWorkedPerYear.defaultValue = defaultWeeksWorkedPerYear;
+
+equivalentHourlyRate.innerText = averageSalary.value / hoursWorkedPerWeek.value / weeksWorkedPerYear.value;
+
+
+
+
