@@ -26,7 +26,7 @@ averageSalary.defaultValue = defaultSalary;
 hoursWorkedPerWeek.defaultValue = defaultHoursWorkedPerWeek;
 weeksWorkedPerYear.defaultValue = defaultWeeksWorkedPerYear;
 
-equivalentHourlyRate.innerText = "$" + (averageSalary.value / weeksWorkedPerYear.value / hoursWorkedPerWeek.value);
+equivalentHourlyRate.innerText = "$" + (averageSalary.value / (weeksWorkedPerYear.value * hoursWorkedPerWeek.value));
 
 
 
